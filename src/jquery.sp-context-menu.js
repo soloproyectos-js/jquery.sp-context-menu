@@ -18,7 +18,24 @@
      */
     $.spContextMenu = function (target) {
         this._target = target === undefined? null: target;
+        this._items = [];
         this._make();
+    };
+    
+    /**
+     * ContextMenu plugin.
+     * 
+     * @var {object} entries List of entries
+     * 
+     * @return {jQuery.<HTMLElement>}
+     */
+    $.fn.spContextMenu = function (entries) {
+        return this.each(function () {
+            var cm = new $.spContextMenu($(this));
+            $.each(entries, function (label, onClick) {
+                cm.addItem(label, onClick);
+            });
+        });
     };
     
     /**
