@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" media="all" href="../dist/jquery.sp-context-menu.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../dist/jquery.sp-context-menu.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('ul a').spContextMenu({
+                'Item 1': function () {
+                    console.log('click 1');
+                },
+                'Item 2': function () {
+                    console.log('click 2');
+                },
+                'Item 3': function () {
+                    console.log('click 3');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Click here</a></li>
+        <li><a href="#">Click here</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" media="all" href="../dist/jquery.sp-context-menu.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../dist/jquery.sp-context-menu.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // creates a dynamic context menu
+            var cm = new $.spContextMenu();
+            cm.addItem('Item 1', function () {
+                console.log('click 1');
+            });
+            cm.addItem('Item 2', function () {
+                console.log('click 2');
+            });
+            cm.setX(200);
+            cm.setY(50);
+            
+            $('a.link').click(function () {
+                cm.show();
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <a href="#" class="link">Click here to show the menu.</a>
+</body>
+</html>
