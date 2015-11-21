@@ -11,7 +11,7 @@ cat \
 | uglifyjs \
     --compress \
     --mangle \
-    --preamble "/*! jQuery.spRegex v0.1.0 | Copyright (c) 2015 Gonzalo Chumillas | https://github.com/soloproyectos-js/jquery.sp-context-menu/blob/master/README.md */" \
+    --preamble "/*! jQuery.spRegex v0.2.0 | Copyright (c) 2015 Gonzalo Chumillas | https://github.com/soloproyectos-js/jquery.sp-context-menu/blob/master/README.md */" \
     -o dist/jquery.sp-context-menu.min.js
 # compresses CSS files
 cat \
