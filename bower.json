@@ -1,0 +1,23 @@
+{
+  "name": "jquery.sp-context-menu",
+  "version": "0.1.0",
+  "homepage": "https://github.com/soloproyectos-js/jquery.sp-context-menu",
+  "authors": [
+    "Gonzalo Chumillas <gchumillas@email.com>"
+  ],
+  "description": "A simple contextual menu plugin for jQuery.",
+  "main": "dist/jquery.sp-context-menu.min.js",
+  "keywords": [
+    "jquery",
+    "context menu"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "vendor",
+    "test"
+  ],
+  "dependencies": {
+    "jquery": "~2.0"
+  }
+}
